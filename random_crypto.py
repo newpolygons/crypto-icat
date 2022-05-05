@@ -26,6 +26,6 @@ def getIcon():
 
 def main():
     getIcon()
-    
+
 if __name__ == "__main__":
     main()

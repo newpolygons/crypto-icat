@@ -35,5 +35,5 @@ $HOME/.crypto-icat/crypto-icat.sh
 ## Specify Crypto
 
 ```sh
-$HOME/.crypto-icat/crypto-icat.sh "-c btc"
+$HOME/.crypto-icat/crypto-icat.sh -c btc
 ```
