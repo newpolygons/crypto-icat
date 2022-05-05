@@ -12,4 +12,4 @@ echo " "
 echo " "
 
 ### CHANGE THIS LINE IF YOU NEED TO USE THIS SCRIPT ON ANOTHER TERMINAL
-kitty icat --align left --silent $HOME/.crypto-icat/cryto-icons/$crypto.png
+kitty icat --align left --silent $HOME/.crypto-icat/cryto-icons/$crypto
