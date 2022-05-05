@@ -15,7 +15,8 @@ def getIcon():
         if crypto == "--crypto" or crypto == "-c":
             coin = sys.argv[2:]
             for i in iconList:
-                if coin[0] == i[:i.find(".")]:
+                file = i[:i.find(".")]
+                if coin[0] == file:
                     print(coin[0] + ".png")
     else:
         print(random.choice(iconList))
@@ -25,13 +26,6 @@ def getIcon():
 
 def main():
     getIcon()
-    '''
-    generation = evaluate_generation()
-
-    home = expanduser("~")
-    pokemon = linecache.getline(home + "/.pokemon-icat/nameslist.txt", evaluate_index(generation))[:-1]
-
-    print(f"{pokemon} - {roman_numerals(generation)} Generation")
-    '''
+    
 if __name__ == "__main__":
     main()
