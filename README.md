@@ -6,7 +6,7 @@ This script is inspired by [this project](https://github.com/ph04/pokemon-icat)
 
 ## Installation
 
-**Important**: this script currently works only on Kitty, but in [crypto-icat.sh](crypto-icat.sh) you can change this behaviour by editing the last line, which shows the picture in the terminal.
+**Important**: this script currently works only on Kitty, but in [crypto-icat.sh](crypto-icat.sh) you can change this behavior by editing the last line, which shows the picture in the terminal.
 
 To install the script, you must first have all the necessary packages installed:
 
@@ -29,5 +29,11 @@ which should start the installation process of the script.
 To show a random crypto, simply run:
 
 ```sh
-$HOME/.pokemon-icat/crypto-icat.sh
+$HOME/.crypto-icat/crypto-icat.sh
+```
+
+## Specify Crypto
+
+```sh
+$HOME/.crypto-icat/crypto-icat.sh -btc
 ```

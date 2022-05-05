@@ -9,7 +9,13 @@ def getIcon():
     iconPath = (home + "/.crypto-icat/crypto-icons")
     iconList = os.listdir(iconPath)
 
-    print(random.choice(iconList))
+    if len(sys.args) > 1:
+        crypto = sys.argv[1]
+        for i in iconList:
+            if cryto == i.split('.', 1)[0]:
+                print(crypto + ".png")
+    else:
+        print(random.choice(iconList))
 
 
 
