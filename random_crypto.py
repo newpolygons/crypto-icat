@@ -16,7 +16,7 @@ def getIcon():
             coin = sys.argv[2:]
 
             for i in iconList:
-                if coin == i.split('.', 1)[0]:
+                if coin == i[:i.find(".")]
                     print(coin + ".png")
     else:
         print(random.choice(iconList))
