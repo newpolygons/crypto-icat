@@ -6,7 +6,7 @@ import linecache , sys , json, os
 
 def getIcon():
     home = expanduser("~")
-    iconPath = (home + "./crypto-icat/crypto-icons")
+    iconPath = (home + "/.crypto-icat/crypto-icons")
     iconList = os.listdir(iconPath)
 
     print(random.choice(iconList))
