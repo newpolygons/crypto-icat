@@ -14,10 +14,9 @@ def getIcon():
         crypto = sys.argv[1]
         if crypto == "--crypto" or crypto == "-c":
             coin = sys.argv[2:]
-
             for i in iconList:
-                if coin == i[:i.find(".")]:
-                    print(coin + ".png")
+                if coin[0] == i[:i.find(".")]:
+                    print(coin[0] + ".png")
     else:
         print(random.choice(iconList))
 
