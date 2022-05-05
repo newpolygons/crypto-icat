@@ -9,14 +9,14 @@ def getIcon():
     iconPath = (home + "/.crypto-icat/crypto-icons")
     iconList = os.listdir(iconPath)
 
-    if len(sys.args) > 1:
+    if len(sys.argv) > 1:
 
         crypto = sys.argv[1]
-        if command == "--crypto" or command == "-c":
+        if crypto == "--crypto" or crypto == "-c":
             coin = sys.argv[2:]
 
             for i in iconList:
-                if coin == i[:i.find(".")]
+                if coin == i[:i.find(".")]:
                     print(coin + ".png")
     else:
         print(random.choice(iconList))
