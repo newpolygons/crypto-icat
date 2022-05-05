@@ -10,10 +10,14 @@ def getIcon():
     iconList = os.listdir(iconPath)
 
     if len(sys.args) > 1:
+
         crypto = sys.argv[1]
-        for i in iconList:
-            if cryto == i.split('.', 1)[0]:
-                print(crypto + ".png")
+        if command == "--crypto" or command == "-c":
+            coin = sys.argv[2:]
+
+            for i in iconList:
+                if coin == i.split('.', 1)[0]:
+                    print(coin + ".png")
     else:
         print(random.choice(iconList))
 
