@@ -17,21 +17,17 @@ To install the script, you must first have all the necessary packages installed:
 After making sure that you have all of these installed, run this command:
 
 ```sh
-git clone https://github.com/ph04/pokemon-icat && cd pokemon-icat && chmod +x install.sh && ./install.sh
+git clone https://github.com/newpolygons/crypto-icat && cd crypto-icat && chmod +x install.sh && ./install.sh
 ```
 
-which should start the installation process of the script, by downloading every picture of every Pokémon.
+which should start the installation process of the script.
 
-By default, this will download every Pokémon with an upscaling factor of the original image of `9`, but if you want to change this, run the last command with the option `--upscale [upscaling factor]`, for example:
 
-```sh
-./install.sh -u 15
-```
 
 ## Usage
 
-To show a random pokemon, simply run:
+To show a random crypto, simply run:
 
 ```sh
-$HOME/.pokemon-icat/pokemon-icat.sh
+$HOME/.pokemon-icat/crypto-icat.sh
 ```
