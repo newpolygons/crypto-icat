@@ -6,7 +6,7 @@ def main():
     currentDir = os.getcwd()
     sourceDir = (currentDir + "/icon")
     destinationDir = (f"{home}/.crypto-icat/crypto-icons")
-    shutil.copytree(sourceDir, destinationDir)
+    shutil.copytree(sourceDir, destinationDir, dirs_exist_ok=True)
 
     shutil.rmtree(sourceDir)
 
